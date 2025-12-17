@@ -70,17 +70,17 @@ def show_text_input_screen(t, screen, current_text="", show_cursor=True):
         t.write(current_text, align="center",
                 font=("Arial", 24, "bold"))
     
-    # Show blinking cursor after text (or at start if no text)
+    # Show blinking cursor after text
     if show_cursor:
         if current_text:
-            # Position cursor at the end of text
-            # Each character is approximately 14 pixels wide in 24pt Arial Bold
-            text_width = len(current_text) * 14
-            # Center-aligned text starts at -text_width/2, cursor goes after
-            cursor_x = (text_width / 2) + 2
+            # Position cursor after the last character
+            # Approximate character width for Arial 24pt bold
+            char_width = 15
+            text_width = len(current_text) * char_width
+            cursor_x = (text_width / 2) + 5
         else:
             cursor_x = 0
-        t.goto(cursor_x, 20)
+        t.goto(cursor_x, 18)  # Slightly lower for proper alignment
         t.write("_", align="left", font=("Arial", 24, "bold"))
     
     # Instructions
