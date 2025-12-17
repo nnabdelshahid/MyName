@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <rect width="100%" height="100%" fill="#0b0b0b"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#e6ffff">
+    <text x="50%" y="50%" font-size="36" text-anchor="middle" fill="#00ffff">MyName — Text Animator Studio</text>
+    <text x="50%" y="60%" font-size="18" text-anchor="middle" fill="#88f">(Screenshot placeholder)</text>
+  </g>
+  <rect x="40" y="80" width="1120" height="380" rx="10" fill="#111" stroke="#223"/>
+  <g fill="#8cf" font-family="monospace" font-size="20">
+    <text x="120" y="160">T H I S   I S   A   S I M U L A T E D   S C R E E N</text>
+    <text x="120" y="200">Run the app locally with: python3 MyName.py</text>
+  </g>
+</svg>
